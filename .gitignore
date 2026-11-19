@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+../venv/
+
+# Environment variables & secrets
+.env
+
+# Testing & caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs & temp files
+logs/
+*.log
+
+# Raw Corpus & Large Data (8+ GB raw PDFs exceed GitHub's 100MB file limit)
+data/raw/*
+!data/raw/.gitkeep
+
+# Vector Database (SQLite DB > 100MB exceeds GitHub's file limit; built via core.chunk)
+data/chroma_db/*
+!data/chroma_db/.gitkeep
+
+# Processed text & individual JSON sections (can be extracted/regenerated via core.ingest)
+data/processed/*.txt
+data/processed/*_sections.json
+!data/processed/manifest.json
+!data/processed/.gitkeep
+
+# Feedback log (local user feedback)
+data/feedback/*.jsonl
+!data/feedback/.gitkeep
+
+# OS specific files
+.DS_Store
+Thumbs.db
+desktop.ini
