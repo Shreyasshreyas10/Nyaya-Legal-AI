@@ -1,3 +1,13 @@
+---
+title: Nyaya Legal AI
+emoji: ⚖️
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 8000
+pinned: false
+---
+
 # Nyaya — AI-Powered Indian Legal Advisory System
 
 Multi-agent RAG pipeline · Sarvam LLM · LangGraph · Multilingual · Arize Phoenix

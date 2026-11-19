@@ -13,7 +13,7 @@ PHOENIX_HOST = os.getenv("PHOENIX_HOST", "localhost")
 PHOENIX_PORT = int(os.getenv("PHOENIX_PORT", 6006))
 
 APP_HOST = os.getenv("APP_HOST", "0.0.0.0")
-APP_PORT = int(os.getenv("APP_PORT", 8000))
+APP_PORT = int(os.getenv("PORT", os.getenv("APP_PORT", 8000)))
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
 
 SUPPORTED_LANGUAGES = {

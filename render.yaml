@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: nyaya-legal-ai
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: OMP_NUM_THREADS
+        value: 1
+      - key: MKL_NUM_THREADS
+        value: 1
+      - key: USE_PLAIN_LANGUAGE_AI
+        value: false
